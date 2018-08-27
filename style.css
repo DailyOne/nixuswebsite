@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+/* CSS RESET */
+*
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+    /* PREVENTS THE USER FROM SELECTING TEXT */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    -khtml-user-select: none;   /* Konqueror */
+    -o-user-select: none;       /* Opera */
+    user-select: none;          /* Likely future */
+}
+
+/* FLOATS ALL COLUMNS 1-12 TO THE LEFT */
+[class*="col-"]
+{
+    float: left;
+    font-family: 'Exo';
+}
+
+/* INITIALIZES THE 12 COLUMN GRID LAYOUT */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* CLEARS THE FLOW OF THE COLUMNS
+.row::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}*/
+
+/* COLUMN WIDTH COLOR TEST */
+.c1{background-color: #111;}
+.c2{background-color: #222;}
+.c3{background-color: #333;}
+.c4{background-color: #444;}
+.c5{background-color: #555;}
+.c6{background-color: #666;}
+.c7{background-color: #777;}
+.c8{background-color: #888;}
+.c9{background-color: #999;}
+.c10{background-color: #111;}
+.c11{background-color: #222;}
+.c12{background-color: #333;}
+
+body
+{
+  background-color: #D2D4C8;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* NAVIGATION STYLING */
+.nav-bar
+{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  background-color: #889696;
+}
+.nav-link.left
+{
+  width: 120px;
+  float: left;
+  font-size: 10px;
+}
+/* NAVIGATION BAR LINKS STYLING */
+.nav-link
+{
+  width: 80px;
+  background-color: #889696;
+  float: right;
+  display: block;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Exo';
+  font-size:10px;
+}
+.nav-link:hover
+{
+  color: white;
+}
+/* ACTIVE LINK COLOR */
+.nav-link.active
+{
+  color: floralwhite;
+}
+
+/* INNER DIVS VERTICAL ALIGNMENT */
+/*.vertical-alignment
+{
+  border: 0px solid green;
+
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+}*/
+
+/* BODY PAGE CONTENT */
+.content
+{
+  margin: auto;
+  margin-top: 150px;
+  width: 100%;
+  background-color: #B8BDB5;
+  padding: 50px 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  font-family: 'Exo';
+  font-size: 14px;
+  color: floralwhite;
+}
+.content p
+{
+  /*padding: 10px;*/
+  background-color: #B8BDB5;
+  line-height: 20px;
+  font-weight: 500;
+}
+.logo
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+.icon
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
+}
+
+h1
+{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: ;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+h2
+{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: ;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+/* FOOTER */
+footer
+{
+  position: fixed;
+  height: 50px;
+
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+  text-align: center;
+  color: lightgrey;
+  font-family: 'Exo';
+  font-size: 12px;
+  background-color: #889696;
+}
+
+/* RESPONSIVE WEB DESIGN */
+/* MEDIA QUERIES FOR MOBILE PHONES */
+/* iPhone 6/7/8 Plus */
+@media screen and (max-width:414px)
+{
+  .nav-link.left, .nav-link
+  {
+    width: 82.8px;
+  }
+}
+/* Pixel 2 / Pixel 2 XL */
+@media screen and (max-width:411px)
+{
+  .nav-link.left, .nav-link
+  {
+    width: 82.2px;
+  }
+}
+/* iPhone 6/7/8 iPhonxe X(width) */
+@media screen and (max-width:375px)
+{
+  .nav-link.left, .nav-link
+  {
+    width: 75px;
+  }
+}
+/* Galaxy S5 */
+@media screen and (max-width:360px)
+{
+  .nav-link.left, .nav-link
+  {
+    width: 72px;
+  }
+}
+/* iPhone 5/SE */
+@media screen and (max-width:320px)
+{
+  .nav-link.left, .nav-link
+  {
+    width: 64px;
+  }
+}
+
+
+/* MEDIA QUERIES FOR TABLETS */
